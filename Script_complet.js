@@ -1,5 +1,11 @@
+//About Sentinel-2 L1C Data
+//Measurement: Top of the atmosphere (TOA) reflectance
+//About Sentinel-2 L2A Data
+//Measurement: Bottom of the atmosphere (BOA) reflectance, processed from L1C with Sen2Cor
+//More informations: https://earth.esa.int/web/sentinel/user-guides/sentinel-2-msi/product-types/level-2a
 
-//Chacune des 3 couleurs du pixel reçois un canal de la caméra multispectrale.
+//Chacune des 3 couleurs du pixel reçois un canal de la caméra multispectrale, valeur entre 0 e 1.
+// l'affichage se fera ensuite automatiquemment, en multipliant par 255.
 var rouge	= B04;
 var vert	= B03;
 var bleu	= B02;
