@@ -39,11 +39,11 @@ var vert_arrosage = vert * 2 + NDVI + (Math.max(0,NDWI_H-0.1)*3)
 //au traitement fait sur chaque couleur du pixel du tableau.
 //Le tableau représente l'image ou chaque case est un pixel à 3 valeurs.
 
-return [rouge	* 2.5,
+return [rouge	* 2.5,//2.5 est le facteur de gain* il peut être nécessaire de le modifier pour adapter la luminosité
         vert	* 2.5,
         bleu	* 2.5];
 
-//The default gain factor is set to 2.5,
+//*The default gain factor is set to 2.5,
 //which corresponds to white-point reflectance of 40%
 //(a pixel with 40% or more reflectance in all three bands
 //will appear white in the resulting image).
