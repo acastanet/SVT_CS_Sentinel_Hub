@@ -39,7 +39,7 @@ var vert_arrosage = vert * 2 + NDVI + (Math.max(0,NDWI_H-0.1)*3)
 //au traitement fait sur chaque couleur du pixel du tableau.
 //Le tableau représente l'image ou chaque case est un pixel à 3 valeurs.
 
-return [rouge	* 2.5,//2.5 est le facteur de gain* il peut être nécessaire de le modifier pour adapter la luminosité
+return [rouge	* 2.5,//2.5 est le facteur de gain* il peut être nécessaire de le suprimer (* 1) ou de le modifier pour adapter la luminosité.
         vert	* 2.5,
         bleu	* 2.5];
 
